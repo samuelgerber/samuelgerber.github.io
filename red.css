@@ -1,0 +1,170 @@
+.text {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	line-height: normal;
+}
+
+
+
+.imgtext {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	line-height: normal;
+}
+
+.header1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	color : #777777
+
+}
+.header2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+
+}
+
+.header3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+
+}
+
+.title {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+
+}
+
+.subtitle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+
+}
+
+.navigation {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+
+}
+
+a:link {
+	text-decoration: none;
+	color: #CC3300;
+
+}
+a:visited {
+	text-decoration: none;
+	color: #CC3300;
+}
+a:hover {
+	color: #000000;
+}
+
+.smalltext {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	line-height: normal;
+	text-transform: lowercase;
+}
+#headertable {
+	background-color: #BBBBBB;
+}
+
+#maintable {
+	background-color: #E5E5E5;
+}
+
+#bod {
+	background-color: #BBBBBB;
+}
+
+
+/**
+ * Image slider
+**/
+
+.alfa {
+background-image: url(./galaxy-bw.png);
+width: 250px;
+height: 222px;
+/**border: 20px solid #F0E5AB;
+  border-radius: 3px;
+box-shadow: 0 0 1px #999, -2px 2px 3px rgba(0,0,0,.2);**/
+padding: 0;
+margin: 0;
+position: relative;
+overflow: hidden;
+}
+
+.bravo {
+background-image: url(./galaxy-stars-bw.png);
+height: 222px;
+resize: horizontal;
+position: absolute;
+top: 0; left: 0;
+min-width: 0;
+max-width: 250px;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+.bravo:before {
+content: "" ;
+background: rgba(255,255,255,.7);
+font-size: 10px;
+color: rgba(0,0,255, .5);
+top: 0; right: 0px;
+height: 100%;
+width: 7px;
+line-height: 222px;
+position: absolute;
+}
+
+.charly{
+resize: horizontal;
+opacity: 0;
+position: relative;
+top: 50%;
+left: 0;
+margin-right: 0px;
+width: 0px; height: 15px;
+max-width: 250px; min-width: 0px;
+outline: 0 solid transparent;
+cursor: move;
+cursor: all-scroll;
+transform: scaley(35);
+transform-origin: center center;
+animation: delta 4s 1 normal ease-in-out 0s;
+}
+@keyframes delta {
+50% {width: 200px}
+100% {width: 0px}
+}
